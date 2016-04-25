@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	
 	<title>Document</title>
 	<link rel="stylesheet" href="./style.css" type="text/css">
-	<script src="./script.js"></script>
+	<script src="./js/script.js"></script>
+	
+	<!-- 引用 QRcode套件 -->
+	<script type="text/javascript" src="./js/llqrcode.js"></script>
+	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+	<script type="text/javascript" src="./js/webqr.js"></script>
+	
+
+  	
+	
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 </head>
 <body>
 	<!-- 乾淨a原碼 -->
@@ -22,24 +33,34 @@
 	<a id="Price">-</a-->
 	
 	<!-- 臨時亂湊 -->
-	
-	<div class="main">
-		<a>票號: </a><a id="TicketID">-</a><br>	         
-		<a>訂票號碼: </a><a id="BookID">-</a><br>	         
-		<a>日期: </a><a id="Dates">-</a><br>	         
-		<a>車次: </a><a id="TrainID">-</a><br>            
-		<a>起站: </a><a id="StartID">-</a><br>            
-		<a>発車時刻: </a><a id="StartIime">-</a><br>	         
-		<a>迄站: </a><a id="ArriveID">-</a><br>	         
-		<a>到着時刻: </a><a id="ArriveTime">-</a><br>         
-		<a id="CarID">-</a>           
-		<a id="SeatID">-</a><br>          
-		<a>価格: </a><a id="Price">-</a><br>	             
+		<div class="main">
+			<div id="outdiv"></div>
+			<div id="result"></div>				
+			<div class="mid">
 
-		
-		<br>
-		<button type=button" onclick="FuncClick()"> Demo</button>
-	</div>
+				<br><br>
+				<a>票號: </a><a id="TicketID">-</a><br>	         
+				<a>訂票號碼: </a><a id="BookID">-</a><br>	         
+				<a>日期: </a><a id="Dates">-</a><br>	         
+				<a>車次: </a><a id="TrainID">-</a><br>            
+				<a>起站: </a><a id="StartID">-</a><br>            
+				<a>発車時刻: </a><a id="StartTime">-</a><br>	         
+				<a>迄站: </a><a id="ArriveID">-</a><br>	         
+				<a>到着時刻: </a><a id="ArriveTime">-</a><br>         
+				<a id="CarID">-</a>           
+				<a id="SeatID">-</a><br>          
+				<a>価格: </a><a id="Price">-</a><br>	             
+
+				
+				<br>
+			</div>
+		</div>
+
+	
+	
+<canvas id="qr-canvas" width="0" height="0" ></canvas>
+<script type="text/javascript">load();</script>
+	
 </body>
 
 

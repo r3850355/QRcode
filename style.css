@@ -4,16 +4,64 @@ padding:50px 20px 0 20px;
 position:absolute;
 left:45%;
 border-left: 1px solid;
-Font-family:Meiryo;
+Font-family:Meiryo, Heiti TC;
+
 
 }
 
+.main>.mid>a{
+	
+	color:#123;
+	
+}
 
+
+#TicketID{
+	font-size:80%;
+	color:#A4A4A4;
+}
+#BookID{
+	font-size:80%;
+	color:#A4A4A4;
+}
+#Dates{
+	Font-family:SimHei, Heiti TC;
+	font-weight: bold;
+}
 #StartID{
 	font-size:120%;
 }
-
+#StartTime{
+	font-weight: bold;
+}
 #ArriveID{
 	font-size:120%;
 }
+#ArriveTime{
+	font-weight: bold;
+}
+#Price{
+	font-size:85%;
+}
 
+
+@media screen and (max-width: 480px) {
+
+
+.main {
+
+	padding:20px 0 0 0;
+	left:0%;
+	border-left: 0px ;
+	Font-family:Meiryo, Heiti TC;
+	
+}
+
+.mid {
+	padding-left:50px;
+
+	
+}
+
+
+}
