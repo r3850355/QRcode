@@ -43,6 +43,13 @@ Font-family:Meiryo, Heiti TC;
 #Price{
 	font-size:85%;
 }
+#CarID{
+	
+	font-size:120%;
+}
+#SeatID{
+	font-size:120%;
+}
 
 
 @media screen and (max-width: 480px) {

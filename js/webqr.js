@@ -9,8 +9,8 @@ var gUM=false;
 var webkit=false;
 var moz=false;
 var v=null;
-//
-var imghtml='<input type="file" onchange="handleFiles(this.files)"/>'
+
+var imghtml='<input type="file" id="inputbox" onchange="handleFiles(this.files)"/>'
 
 
 var vidhtml = '<video id="v" autoplay></video>';
@@ -129,7 +129,9 @@ function load()
 	{
 		initCanvas(0, 0);
 		qrcode.callback = read;
+		$(".main").hide();
         setimg();
+		
 	}
 	else
 	{

@@ -4,9 +4,12 @@
 	<meta charset="UTF-8">
 	
 	<title>Document</title>
-	<link rel="stylesheet" href="./style.css" type="text/css">
-	<script src="./js/script.js"></script>
+	<script src="./js/jquery.min.js"></script>
 	
+	<!-- 自訂套件 -->
+	<link rel="stylesheet" href="./new.css" type="text/css">
+	<script src="./js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
 	<!-- 引用 QRcode套件 -->
 	<script type="text/javascript" src="./js/llqrcode.js"></script>
 	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
@@ -33,34 +36,58 @@
 	<a id="Price">-</a-->
 	
 	<!-- 臨時亂湊 -->
+	
+		
+		<div id="outdiv"></div>
+		<div id="result"></div>	
+	
 		<div class="main">
-			<div id="outdiv"></div>
-			<div id="result"></div>				
-			<div class="mid">
-
-				<br><br>
-				<a>票號: </a><a id="TicketID">-</a><br>	         
-				<a>訂票號碼: </a><a id="BookID">-</a><br>	         
-				<a>日期: </a><a id="Dates">-</a><br>	         
-				<a>車次: </a><a id="TrainID">-</a><br>            
-				<a>起站: </a><a id="StartID">-</a><br>            
-				<a>発車時刻: </a><a id="StartTime">-</a><br>	         
-				<a>迄站: </a><a id="ArriveID">-</a><br>	         
-				<a>到着時刻: </a><a id="ArriveTime">-</a><br>         
-				<a id="CarID">-</a>           
-				<a id="SeatID">-</a><br>          
-				<a>価格: </a><a id="Price">-</a><br>	             
-
+			
+			<div class="pad">
+			
+				<div id="Ways">去程票</div>
+		
+				<div id="TrainID">1305</div>
+				<div id="Train">車次 <eng>TRAIN</eng></div>				
+				<div id="C"></div>				
+				<hr>
 				
-				<br>
+				
+				<div id="SeatTX">車廂<eng>CAR</eng> <br> 座位<eng>Seat</eng> <br><a>標準廂<eng>STD</eng> <br> 乘客<eng>PSGR 1</eng></a></div>
+				<div id="Seat"><a id="CarID">8車</a><br><a id="SeatID">18C</a></div>				
+				<div id="C"></div>				
+				<hr>
+				
+				<div id="Station"><a id="StartID">台北<br><eng>TAIPEI</eng></a><br><i class="fa fa-arrow-down " aria-hidden="true"></i><br><a id="ArriveID">雲林<br><eng>YUNLIN</eng></a></div>
+				<div id="Times">
+					<eng><div id="Dates">2016.02.10</div></eng>
+					<a id="StartTime">07:06</a> 発  <eng><br>DEPARTURE</eng>
+					<hr>
+					<a id="ArriveTime">08:18</a> 着  <eng><br>ARRIVE</eng>					
+				</div>
+				
+				<div id="C"></div>
+				<hr>
+				
+				<div>
+					<div id="BookInfo"><a id="TicketID">-</a><br><a id="BookID">-</a></div>
+					<div id="PriceInfo"><a id="Price">NT$ 930</a></div>
+					<div id="C"></div>
+				</div>
+				
+				
+	             
+				
+
 			</div>
+
 		</div>
 
 	
 	
 <canvas id="qr-canvas" width="0" height="0" ></canvas>
 <script type="text/javascript">load();</script>
-	
+
 </body>
 
 

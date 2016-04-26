@@ -5,6 +5,8 @@ function FuncClick(input)
 	//alert(input);
 	
 	if (input.length != 124) { return false; }
+	hid = document.getElementById("inputbox");
+	hid.style.display='none';
 	
 	TicketID=document.getElementById("TicketID");
 	TicketID.innerHTML = input.substr(0,13);
@@ -33,8 +35,13 @@ function FuncClick(input)
 	SeatID.innerHTML = FuncSeat(input.substr(79,5));
 
 	Price=document.getElementById("Price");
-	Price.innerHTML = Number(input.substr(89,5));
+	Price.innerHTML = "NT$" + Number(input.substr(89,5));
 
+	Ways=document.getElementById("Ways");
+	Ways.innerHTML = FuncWays(input.substr(70,1));
+	
+	$(".main").show();
+	
 }
 
 function FuncSeat(a)  //座位數字轉換
@@ -60,20 +67,22 @@ function FuncSeat(a)  //座位數字轉換
 function FuncStation(a) //站名數字轉換
 {
    a=Number(a)
+   
+   //台北<br><eng>TAIPEI</eng>
 	switch(a)
 	{
-	case 1:return "南港";
-	case 2:return "台北";
-	case 3:return "板橋";
-	case 4:return "桃園";
-	case 5:return "新竹";
-	case 6:return "苗栗";
-	case 7:return "台中";
-	case 8:return "彰化";
-	case 9:return "雲林";
-	case 10:return "嘉義";
-	case 11:return "台南";
-	case 12:return "左營";
+	case 1:return "南港<br><eng>NANGANG</eng>";
+	case 2:return "台北<br><eng>TAIPEI</eng>";
+	case 3:return "板橋<br><eng>BANQIAO</eng>";
+	case 4:return "桃園<br><eng>TAOYUAN</eng>";
+	case 5:return "新竹<br><eng>HSINCHU</eng>";
+	case 6:return "苗栗<br><eng>MIAOLI</eng>";
+	case 7:return "台中<br><eng>TAICHING</eng>";
+	case 8:return "彰化<br><eng>CHANGHUA</eng>";
+	case 9:return "雲林<br><eng>YUNLIN</eng>";
+	case 10:return "嘉義<br><eng>CHIAYI</eng>";
+	case 11:return "台南<br><eng>TAINAN</eng>";
+	case 12:return "左營<br><eng>ZUOYING</eng>";
 	}
 }
 
@@ -92,5 +101,18 @@ function FuncDates(a) //日期格式轉換
 	mm = a.substr(4,2);
 	dd = a.substr(6,2); 
 	return yy + "/" + mm + "/" + dd;
+}
+
+function FuncWays(a)
+{
+	a=Number(a);
+	switch(a)
+	{
+		case 1:return "單程票";
+		case 2:return "去程票";
+		case 3:return "回程票";
+	}
+	
+	
 }
 

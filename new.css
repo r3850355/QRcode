@@ -1,0 +1,116 @@
+#outdiv{ position:absolute;	left:45%; }
+
+
+	
+
+
+.main{
+
+width:200px;
+height:325px;
+position:absolute;
+left:45%;
+border: 1px #D2D2D2 solid;
+
+border-radius:10px;
+Font-family:Meiryo, Heiti TC;
+font-size:14px;
+box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5);
+
+}
+
+eng{
+	Font-family:Verdana, Heiti TC;
+	font-size:50% !important;
+	color:414141;
+}
+
+.pad{
+	
+	padding:15px;
+	
+}
+
+
+#Ways{
+	
+	background:#FFDFBF;
+	text-align:center;
+	width:70px;
+	float:left;
+}
+	
+
+#Train{
+	
+	width:145px;
+	height:15px;
+	float:left;
+}
+
+
+#TrainID{
+	width:100px;
+	padding-top:10px;
+	font-size:180%;
+	text-align:right;
+	height:14px;
+	float:left;
+}
+
+#C{	clear:both; }
+	
+hr{
+	margin:5px 0 5px 0;
+	border:0; 
+	height:1px;
+	background-color:#F77B00;
+	
+}
+
+#SeatTX{	
+	width:70px;
+	float:left;
+}
+#SeatTX a{
+	color:#FF8000;
+	font-size:8px;
+}
+#Seat{
+	font-size:200%;
+	width:100px;
+	text-align:right;
+	float:left;
+}
+
+#Station{
+	padding-top:10px;
+	width:70px;
+	float:left;
+	font-size:150%;
+	line-height: 14px;
+}
+
+#Station i{	padding:5px 5px 10px 5px;color:#F77B00;}
+#Times{
+	width:100px;
+	text-align:right;
+	float:left;	
+	line-height: 16px;
+}
+#Times hr{margin-bottom:10px;}
+#Dates{ padding-bottom:5px;}
+#StartTime{	font-size:150%;}
+#ArriveTime{ font-size:150%;}
+
+#BookInfo{
+	font-size:8px;
+	width:85px;
+	float:left;		
+}
+#PriceInfo{
+	font-size:8px;
+	width:85px;
+	text-align:right;
+	float:left;	
+}
