@@ -9,7 +9,7 @@
 width:200px;
 height:325px;
 position:absolute;
-top:10%;
+top:50px;
 left:45%;
 border: 1px #D2D2D2 solid;
 
@@ -17,6 +17,8 @@ border-radius:10px;
 Font-family:Meiryo, Heiti TC;
 font-size:14px;
 box-shadow:4px 4px 3px rgba(20%,20%,40%,0.5);
+
+
 
 }
 
@@ -116,21 +118,76 @@ hr{
 	float:left;	
 }
 
-
-
-@media screen and (max-width: 480px) {
-
-#outdiv{ position:absolute;	left:20%; }
-
-.main {
-
-	top:10%;
-	left:18%;
-	Font-family:Meiryo, Heiti TC;
-	
+#btn{
+	position:absolute;	left:47.5%; top:450px;
 }
 
-#SeatTX a{font-size:14px;}
+#btn button{
+	
+	
+	font-size:12px;
+	background-color: #555555;
+	color:#fff;
+	padding:10px 40px 10px 40px;
+	border: none;
+	text-align: center;
+    text-decoration: none;
+	display: inline-block;	
+	border-radius: 10px;
+}
 
+.pad2{
+	
+	padding:15px;
+	text-align:center;
+}
+
+.pad2 hr{ height:2px; }
+.pad2 i{ color:#F77B00;}
+.pad2 .sign{ font-size:10px;}
+#QRout{
+	position:relative;
+	left:35px;
+}
+
+.space{
+	height:80px;
+	position:relative;
+}
+
+@media screen and  (max-width: 480px) {
+
+	#outdiv{ position:absolute;	left:20%; }
+
+	.main {
+
+		top:50px;
+		left:18%;
+		Font-family:Meiryo, Heiti TC;
+		
+	}
+
+	#SeatTX a{font-size:14px;}
+	
+	#btn{left:30%; top:430px;	}
+	#btn button{padding:10px 45px 10px 45px;}
+
+}
+@media screen and  (min-width: 481px) and (max-width:1366px)  {
+
+	#outdiv{ position:absolute;	left:20%; }
+
+	.main {
+
+		top:50px;
+		left:40%;
+		Font-family:Meiryo, Heiti TC;
+		
+	}
+	#SeatTX a{ font-size:10px;}
+
+	
+	#btn{left:40%; top:430px;	}
+	#btn button{padding:10px 88px 10px 88px;}
 
 }

@@ -10,11 +10,12 @@
 	<link rel="stylesheet" href="./new.css" type="text/css">
 	<script src="./js/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
-	<!-- 引用 QRcode套件 -->
+	<!-- 引用 讀取QRcode套件 -->
 	<script type="text/javascript" src="./js/llqrcode.js"></script>
 	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 	<script type="text/javascript" src="./js/webqr.js"></script>
-	
+	<!-- 引用 產生QRcode套件 -->
+	<script src="./js/jquery.qrcode-0.12.0.js"></script>
 
   	
 	
@@ -74,16 +75,24 @@
 					<div id="PriceInfo"><a id="Price">NT$ 930</a></div>
 					<div id="C"></div>
 				</div>
-				
-				
-	             
-				
-
 			</div>
 
+			<div class="pad2"> 
+				<br>
+				<a>請使用下方條碼掃瞄進站</a>
+				<hr>
+				<i class="fa fa-caret-down fa-3x" aria-hidden="true"></i>
+				<br>
+
+				<div id="QRout"></div>
+				<div class="space"></div>
+
+				<a class="sign">Bulid by RenZhou 2016</a>
+			</div>
+			
 		</div>
 
-	
+		<div id="btn"><button onclick="FuncTurn()">翻面</button></div>
 	
 <canvas id="qr-canvas" width="0" height="0" ></canvas>
 <script type="text/javascript">load();</script>

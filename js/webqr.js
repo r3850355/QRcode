@@ -130,6 +130,8 @@ function load()
 		initCanvas(0, 0);
 		qrcode.callback = read;
 		$(".main").hide();
+		$(".pad2").hide();
+		$("#btn").hide();
         setimg();
 		
 	}

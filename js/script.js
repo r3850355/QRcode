@@ -41,6 +41,13 @@ function FuncClick(input)
 	Ways.innerHTML = FuncWays(input.substr(70,1));
 	
 	$(".main").show();
+	$("#btn").show();
+	$("#QRout").qrcode({
+		"render": 'div',
+		"size": 100,
+		"color": "#000",
+		"text": input
+	});
 	
 }
 
@@ -108,11 +115,18 @@ function FuncWays(a)
 	a=Number(a);
 	switch(a)
 	{
-		case 1:return "單程票";
-		case 2:return "去程票";
-		case 3:return "回程票";
+		case 1:return "單程券";
+		case 2:return "去程券";
+		case 3:return "回程券";
 	}
 	
 	
+}
+function FuncTurn()
+{
+	$(".pad").toggle();
+	$(".pad2").toggle();
+
+
 }
 
