@@ -132,6 +132,23 @@ function load()
 		$(".main").hide();
 		$(".pad2").hide();
 		$("#btn").hide();
+		
+		var inputs;
+		if (document.cookie.length>0)
+		  {
+
+			
+			inputs = document.cookie;
+			inputs=inputs.match(/SN\=.+[@]/);
+	
+			if (inputs != null){
+				inputs=inputs.toString().replace(/SN=/,"");
+				inputs=inputs.toString().replace("@","");
+				if (inputs.length == 124) { FuncClick(inputs);}			
+			}
+			
+			
+		  }
         setimg();
 		
 	}

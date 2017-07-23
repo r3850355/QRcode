@@ -119,21 +119,13 @@ hr{
 }
 
 #btn{
-	position:absolute;	left:47.5%; top:450px;
-}
-
-#btn button{
-	
-	
-	font-size:12px;
-	background-color: #555555;
-	color:#fff;
-	padding:10px 40px 10px 40px;
-	border: none;
-	text-align: center;
-    text-decoration: none;
-	display: inline-block;	
-	border-radius: 10px;
+	position:absolute;	
+	left:45%; 
+	top:400px;
+	width:170px;
+	height:45px;
+	padding:15px;
+	text-align:center;
 }
 
 .pad2{
@@ -147,11 +139,11 @@ hr{
 .pad2 .sign{ font-size:10px;}
 #QRout{
 	position:relative;
-	left:35px;
+	left:10px;
 }
 
 .space{
-	height:80px;
+	height:30px;
 	position:relative;
 }
 
@@ -169,8 +161,8 @@ hr{
 
 	#SeatTX a{font-size:14px;}
 	
-	#btn{left:30%; top:430px;	}
-	#btn button{padding:10px 45px 10px 45px;}
+	#btn{left:18%; top:400px;	}
+
 
 }
 @media screen and  (min-width: 481px) and (max-width:1366px)  {
@@ -188,6 +180,6 @@ hr{
 
 	
 	#btn{left:40%; top:430px;	}
-	#btn button{padding:10px 88px 10px 88px;}
+
 
 }

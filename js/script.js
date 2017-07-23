@@ -4,10 +4,12 @@ function FuncClick(input)
 	//var input = document.getElementById("result").innerHTML;
 	//alert(input);
 	
-	if (input.length != 124) { return false; }
-	hid = document.getElementById("inputbox");
-	hid.style.display='none';
 	
+	if (input.length != 124) { return false; }
+	
+		
+
+
 	TicketID=document.getElementById("TicketID");
 	TicketID.innerHTML = input.substr(0,13);
 	BookID=document.getElementById("BookID");
@@ -39,17 +41,34 @@ function FuncClick(input)
 
 	Ways=document.getElementById("Ways");
 	Ways.innerHTML = FuncWays(input.substr(70,1));
-	
+
+	inputs = input;
 	$(".main").show();
 	$("#btn").show();
 	$("#QRout").qrcode({
 		"render": 'div',
-		"size": 100,
+		"size": 150,
 		"color": "#000",
 		"text": input
 	});
 	
+	document.cookie="SN="+inputs+"@"; //存入coockie
+	hid = document.getElementById("inputbox");
+	hid.style.display='none';
+	
+	return 0;
 }
+
+function FuncNew(){
+	
+
+document.cookie="SN="; //存入coockie
+window.location.reload();
+
+}
+
+
+
 
 function FuncSeat(a)  //座位數字轉換
 {
